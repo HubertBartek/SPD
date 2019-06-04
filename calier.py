@@ -204,12 +204,6 @@ def Carlier(lista, UB):
 
     if c == -1:
         print("nie ma c")
-        # if kolejnosc :
-        #     kolejnosc[0].insert(0,UB)
-        #     return kolejnosc
-        # else:
-        #     kol[0].insert(0,UB)
-        #     return kol
         return kolejnosc
 
     K_r = min(kol[0][c+1:b+1])
@@ -268,15 +262,10 @@ def Carlier(lista, UB):
     tab = copy.deepcopy(kol)
     tab[0].insert(0,LB)
     print('cmax ost',LB)
-    # print("tab ",tab)
-    #print(len(tab[1]),len(kol[1]))
+
     return tab
 
 plik = "in50.txt"
 lista, zad = czytaj(plik)
 ub = 99999999999999999999999999999999
 Carlier(lista,ub)
-# print ("B: ",b)
-# print("C: ",c)
-# print ("KOL: ", kol)
-# print("cmax: ", cmax)
